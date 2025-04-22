@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo da Forca - Frutas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="login-container" id="loginContainer">
+    <h2>Bem-vindo ao Jogo da Forca</h2>
+    <input type="text" id="nomeUsuario" placeholder="Digite seu nome">
+    <button id="btnLogin">Começar Jogo</button>
+  </div>
+
+  <div class="jogo-container" id="jogoContainer" style="display: none;">
+    <h2 id="tituloJogo">Adivinhe a fruta</h2>
+    <div id="dicaContainer" class="dica">
+      <img id="imgDica" src="" class="personagem-img" />
+      <p id="textoDica"></p>
+    </div>
+    <div id="palavra"></div>
+    <div id="letras"></div>
+    <div class="erros">Erros: <span id="erros">0</span>/6</div>
+  </div>
+
+  <div class="fim-container" id="fimContainer" style="display: none;">
+    <div id="mensagemFinal" class="fim-mensagem"></div>
+    <button onclick="location.reload()">Jogar Novamente</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
